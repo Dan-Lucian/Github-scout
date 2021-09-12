@@ -30,7 +30,8 @@
 // 5. Components
 @import
   'components/buttons',
-  'components/boxes';
+  'components/boxes',
+  'components/search-bar';
 
 // 6. Page-specific styles
 @import
@@ -38,7 +39,9 @@
 
 // 7. Themes
 @import
-  'themes/default';
+  'themes/default',
+  'themes/light', 
+  'themes/dark';
 
 // 8. Shameful hacks
 @import

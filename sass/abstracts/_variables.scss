@@ -2,8 +2,28 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
+// General colors
+$color-button-bg:#0079fe;
+$color-text-link: #1362c6; 
+
+// Light theme colors
+$color-body-bg-light: #f5f8ff;
+$color-app-bg-light: #fefefe;
+$color-text-light: #9298a5;
+$color-text-accent-light:#41444b;
+
+// Dark theme colors
+$color-body-bg-dark: #141c2f;
+$color-app-bg-dark: #1f2a48;
+$color-text-dark: #d2d9e5;
+$color-text-accent-dark:#fcfcfe;
 
 
+
+
+// font sizes
+$size-font-mobile: 15px;
+$size-font-desktop: 18px;
 
 
 /// Regular font family

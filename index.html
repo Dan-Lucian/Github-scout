@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="dark" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="A todo web application (web app), synced with 
-      Firestore Firebase, organize your tasks with a cloud synced 
-      list, portfolio project example"
+      content="A web application (web app), designed to scout a Github user 
+      profile and show in a easy to understand way all the relevant info 
+      about the user."
     />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Boilerplate</title>
+    <title>Github Scout</title>
 
     <!-- Fav icon -->
     <link rel="icon" type="image/ico" href="img/favicon.ico" />
@@ -19,51 +19,99 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/main.css" />
 
-    <!-- Font Awesome 5 -->
-    <script
-      src="https://kit.fontawesome.com/40d9bdd65d.js"
-      crossorigin="anonymous"
-    ></script>
-
     <!-- My Script -->
     <script defer src="js/script.js"></script>
   </head>
 
   <body>
+    <main>
     <!-- ------------------------------------------------- -->
     <!--                     Header                        -->
     <!-- ------------------------------------------------- -->
-
     <header>
-      <div class="box">
-        <div class="box__box"></div>
-      </div>
+      <h1 class="main-title">Github Scout</h1>
+      <button class="btn-theme">
+        <p class="btn-theme__text">Light</p>
+        <img 
+        class="btn-theme__img" 
+        src="img/icon-sun.svg" 
+        alt="theme button icon" 
+        width="20px"
+        height="20px"></img>
+      </button>
     </header>
 
-    <main>
-      <!-- ------------------------------------------------- -->
-      <!--                     Section  1                    -->
-      <!-- ------------------------------------------------- -->
+<!-- ------------------------------------------------- -->
+<!--                     Search bar                    -->
+<!-- ------------------------------------------------- -->
+      <div class="search-bar">
+        <img class="search-bar__img" src="" alt="search icon">
+        <input class="search-bar__input" type="text">
+        <button class="search-bar__btn">Search</button>
+      </div>
 
-      <section></section>
+<!-- ------------------------------------------------- -->
+<!--                     User info container           -->
+<!-- ------------------------------------------------- -->
+      <div class="user-info">
 
-      <!-- ------------------------------------------------- -->
-      <!--                     Section  2                    -->
-      <!-- ------------------------------------------------- -->
+<!-- ------------------------------------------------- -->
+<!--                     User info head                -->
+<!-- ------------------------------------------------- -->
+        <div class="user-info__head">
+          <img class="user-info__profile-img" src="" alt="user profile image">
+          <div class="user-info__">
+            <h2 class="user-info__name">The Octocat</h2>
+            <a class="user-info__profile-link" href="">octocat</a>
+            <p class="user-info__date-joined">Joined 25 Jan 2011</p>
+          </div>
+        </div>
 
-      <section></section>
+<!-- ------------------------------------------------- -->
+<!--                     User info body                -->
+<!-- ------------------------------------------------- -->
+        <div class="user-info__body">
+          <p clas="user-info__bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam accusantium vitae perspiciatis voluptatum veritatis sequi consectetur deleniti voluptatem dicta autem error necessitatibus atque itaque et, totam natus praesentium a laudantium.</p>
 
-      <!-- ------------------------------------------------- -->
-      <!--                     Section  3                    -->
-      <!-- ------------------------------------------------- -->
+          <div class="user-info__stats">
+            <div class="user-info__repos">
+              <p class="user-info__repos__text">Repos</p>
+              <p class="user-info__repos__number">-</p>
+            </div>
+            <div class="user-info__followers">
+              <p class="user-info__followers__text">Followers</p>
+              <p class="user-info__followers__number">-</p>
+            </div>
+            <div class="user-info__following">
+              <p class="user-info__following__text">Following</p>
+              <p class="user-info__following__number">-</p>
+            </div>
+          </div>
 
-      <section></section>
+<!-- ------------------------------------------------- -->
+<!--                     User info contact                -->
+<!-- ------------------------------------------------- -->
+          <div class="user-info__contact">
+            <div class="user-info__address">
+              <img class="user-info__adress__img" src="" alt="address icon">
+              <p class="user-info__adress__text">-</p>
+            </div>
+            <div class="user-info__site">
+              <img class="user-info__site__img" src="" alt="address icon">
+              <p class="user-info__site__text">-</p>
+            </div>
+            <div class="user-info__twitter">
+              <img class="user-info__twitter__img" src="" alt="address icon">
+              <p class="user-info__twitter__text">-</p>
+            </div>
+            <div class="user-info__workplace">
+              <img class="user-info__workplace__img" src="" alt="address icon">
+              <p class="user-info__workplace__text">-</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </main>
-
-    <!-- ------------------------------------------------- -->
-    <!--                     Footer                        -->
-    <!-- ------------------------------------------------- -->
-
-    <footer></footer>
   </body>
 </html>

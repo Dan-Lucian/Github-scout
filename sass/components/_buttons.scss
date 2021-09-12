@@ -1,3 +1,24 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+button{
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+.btn-theme{
+  display: flex;
+  align-items: center;
+  background-color: inherit;
+}
+
+.btn-theme__img{
+  margin-left: 15px;
+  width: 20px;
+  height: 20px;
+}
+
+

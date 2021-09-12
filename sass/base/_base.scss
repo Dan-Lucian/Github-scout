@@ -21,6 +21,15 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  background-color: var(--color-body-bg);
+  @include flexCenter(column);
+}
+
+main {
+  width: 90vw;
+}
+
 /**
  * Basic styles for links
  */
@@ -38,7 +47,7 @@ a {
  * Don't know why but it helps 
  */
 
-img {
-  max-width: 100%;
-  max-height: 100%;
+p {
+  padding: 0;
+  margin: 0;
 }

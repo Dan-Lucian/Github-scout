@@ -1,0 +1,11 @@
+// -----------------------------------------------------------------------------
+// Light theme
+// -----------------------------------------------------------------------------
+
+// put on html tag by js
+.light {
+  --color-body-bg: #{$color-body-bg-light};
+  --color-app-bg: #{$color-app-bg-light};
+  --color-text: #{$color-text-light};
+  --color-text-accent: #{$color-text-accent-light};
+}

@@ -3,6 +3,22 @@
  * the color, size, spacing, and shape of text.
  */
 body {
-  color: $text-color;
-  font: normal 125% / 1.4 $text-font-stack;
+  font-family: 'Space Mono', monospace;
+  font-size: $size-font-mobile;
+  color: var(--color-text);
+
+  @media screen and (min-width: 420px) {
+    font-size: $size-font-desktop;
+  }
+}
+
+h1, h2{
+  color: var(--color-text-accent);
+}
+
+.btn-theme__text{
+  color: var(--color-text-accent);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }

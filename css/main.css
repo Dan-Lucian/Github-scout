@@ -356,6 +356,18 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  background-color: var(--color-body-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main {
+  width: 90vw;
+}
+
 /**
  * Basic styles for links
  */
@@ -371,9 +383,9 @@ a:hover, a:active, a:focus {
 /**
  * Don't know why but it helps 
  */
-img {
-  max-width: 100%;
-  max-height: 100%;
+p {
+  padding: 0;
+  margin: 0;
 }
 
 /**
@@ -381,8 +393,25 @@ img {
  * the color, size, spacing, and shape of text.
  */
 body {
-  color: #222222;
-  font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Space Mono", monospace;
+  font-size: 15px;
+  color: var(--color-text);
+}
+@media screen and (min-width: 420px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+h1, h2 {
+  color: var(--color-text-accent);
+}
+
+.btn-theme__text {
+  color: var(--color-text-accent);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 /**
@@ -444,6 +473,33 @@ body {
   width: 1px;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90vw;
+  height: 100px;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+.btn-theme {
+  display: flex;
+  align-items: center;
+  background-color: inherit;
+}
+
+.btn-theme__img {
+  margin-left: 15px;
+  width: 20px;
+  height: 20px;
+}
+
 .box {
   margin: 20px;
   height: 200px;
@@ -459,6 +515,20 @@ body {
   height: 100px;
   width: 100px;
   background-color: hotpink;
+}
+
+.light {
+  --color-body-bg: #f5f8ff;
+  --color-app-bg: #fefefe;
+  --color-text: #9298a5;
+  --color-text-accent: #41444b;
+}
+
+.dark {
+  --color-body-bg: #141c2f;
+  --color-app-bg: #1f2a48;
+  --color-text: #d2d9e5;
+  --color-text-accent: #fcfcfe;
 }
 
 /*# sourceMappingURL=main.css.map */
