@@ -1,0 +1,43 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the input in the search bar
+// -----------------------------------------------------------------------------
+
+.search-bar__input-container {
+  flex-grow: 1;
+  position: relative;
+  margin: 0 10px;
+}
+
+.search-bar__input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  color: var(--color-text);
+
+  padding: 7px 0px;
+  transition: 0.4s;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: var(--color-text);
+  }
+
+  & + .focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: $color-button-bg;
+    transition: 0.4s;
+  }
+  
+  &:focus + .focus-border {
+    width: 100%;
+    transition: 0.4s;
+  }
+}

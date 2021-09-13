@@ -1,0 +1,107 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the info body element
+// -----------------------------------------------------------------------------
+
+//------------------------------------------------------------------------------
+// Name, profile img
+//------------------------------------------------------------------------------
+.user-info {
+  margin-top: 1.2rem;
+  padding: 35px 26px;
+  border-radius: $px-border-radius;
+  background-color: var(--color-app-bg);
+}
+
+.user-info__profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: white;
+}
+
+.user-info__head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.user-info__name-container {
+  margin-left: 20px;
+}
+
+.user-info__profile-link {
+  line-height: 2;
+  color: $color-button-bg;
+
+  &:hover, &:active {
+    color: darken($color-button-bg, 15%);
+    text-decoration: none;
+  }
+}
+
+.user-info__date-joined {
+  line-height: 2;
+}
+
+.user-info__bio {
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+//------------------------------------------------------------------------------
+// Stats table
+//------------------------------------------------------------------------------
+.user-info__stats {
+  margin-bottom: 30px;
+  padding: 25px 10px;
+  border-radius: $px-border-radius;
+  display: flex;
+  background-color: var(--color-body-bg);
+  text-align: center;
+}
+
+.user-info__stats-child {
+  flex-basis: 33.33%;
+}
+
+.user-info__repos__number,
+.user-info__followers__number,
+.user-info__following__number {
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+//------------------------------------------------------------------------------
+// Contact adress, website, company
+//------------------------------------------------------------------------------
+.user-info__contact {
+  @include flexCenter(column);
+  @media screen and (min-width: 600px) {
+    flex-direction: row;
+  }
+}
+
+.user-info__wrapper {
+  width: 100%;
+}
+
+.user-info__wrapper:nth-child(2) {
+  @media screen and (min-width: 600px) {
+    margin-left: 30px;
+  }
+}
+
+.user-info__contact-child {
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+}
+
+.user-info__contact img {
+  margin-right: 10px;
+}
+
+.user-info__adress__text {
+  margin-left: 6px;
+}

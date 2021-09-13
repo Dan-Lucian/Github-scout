@@ -24,6 +24,8 @@ html {
 body {
   background-color: var(--color-body-bg);
   @include flexCenter(column);
+  padding-bottom: 50px;
+  padding-top: 20px;
 }
 
 main {
@@ -47,7 +49,7 @@ a {
  * Don't know why but it helps 
  */
 
-p {
+p, h1, h2 {
   padding: 0;
   margin: 0;
 }

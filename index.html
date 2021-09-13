@@ -25,92 +25,142 @@
 
   <body>
     <main>
-    <!-- ------------------------------------------------- -->
-    <!--                     Header                        -->
-    <!-- ------------------------------------------------- -->
-    <header>
-      <h1 class="main-title">Github Scout</h1>
-      <button class="btn-theme">
-        <p class="btn-theme__text">Light</p>
-        <img 
-        class="btn-theme__img" 
-        src="img/icon-sun.svg" 
-        alt="theme button icon" 
-        width="20px"
-        height="20px"></img>
-      </button>
-    </header>
+      <!-- ------------------------------------------------- -->
+      <!--                     Header                        -->
+      <!-- ------------------------------------------------- -->
+      <header>
+        <h1 class="main-title">Github Scout</h1>
+        <button class="btn-theme">
+          <p class="btn-theme__text">Light</p>
+          <img
+            class="btn-theme__img"
+            src="img/icon-sun.svg"
+            alt="theme button icon"
+            width="20px"
+            height="20px"
+          />
+        </button>
+      </header>
 
-<!-- ------------------------------------------------- -->
-<!--                     Search bar                    -->
-<!-- ------------------------------------------------- -->
+      <!-- ------------------------------------------------- -->
+      <!--                     Search bar                    -->
+      <!-- ------------------------------------------------- -->
       <div class="search-bar">
-        <img class="search-bar__img" src="" alt="search icon">
-        <input class="search-bar__input" type="text">
+        <img
+          class="search-bar__img"
+          src="img/icon-search.svg"
+          alt="search icon"
+          width="25px"
+          height="25px"
+        />
+        <div class="search-bar__input-container">
+          <input
+            class="search-bar__input"
+            type="text"
+            placeholder="Search Github username"
+          />
+          <span class="focus-border"></span>
+        </div>
         <button class="search-bar__btn">Search</button>
       </div>
 
-<!-- ------------------------------------------------- -->
-<!--                     User info container           -->
-<!-- ------------------------------------------------- -->
+      <!-- ------------------------------------------------- -->
+      <!--                     User info container           -->
+      <!-- ------------------------------------------------- -->
       <div class="user-info">
-
-<!-- ------------------------------------------------- -->
-<!--                     User info head                -->
-<!-- ------------------------------------------------- -->
+        <!-- ------------------------------------------------- -->
+        <!--                     User info head                -->
+        <!-- ------------------------------------------------- -->
         <div class="user-info__head">
-          <img class="user-info__profile-img" src="" alt="user profile image">
-          <div class="user-info__">
+          <img
+            class="user-info__profile-img"
+            src="img/favicon.ico"
+            alt="user profile image"
+            width="50px"
+            height="50px"
+          />
+          <div class="user-info__name-container">
             <h2 class="user-info__name">The Octocat</h2>
-            <a class="user-info__profile-link" href="">octocat</a>
+            <a class="user-info__profile-link" href="">@octocat</a>
             <p class="user-info__date-joined">Joined 25 Jan 2011</p>
           </div>
         </div>
-
-<!-- ------------------------------------------------- -->
-<!--                     User info body                -->
-<!-- ------------------------------------------------- -->
+        <!-- ------------------------------------------------- -->
+        <!--                     User info body                -->
+        <!-- ------------------------------------------------- -->
         <div class="user-info__body">
-          <p clas="user-info__bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam accusantium vitae perspiciatis voluptatum veritatis sequi consectetur deleniti voluptatem dicta autem error necessitatibus atque itaque et, totam natus praesentium a laudantium.</p>
+          <p class="user-info__bio">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+            accusantium vitae perspiciatis voluptatum veritatis sequi
+            consectetur deleniti voluptatem dicta autem error necessitatibus
+            atque itaque et, totam natus praesentium a laudantium.
+          </p>
 
           <div class="user-info__stats">
-            <div class="user-info__repos">
+            <div class="user-info__repos user-info__stats-child">
               <p class="user-info__repos__text">Repos</p>
-              <p class="user-info__repos__number">-</p>
+              <p class="user-info__repos__number">138</p>
             </div>
-            <div class="user-info__followers">
+            <div class="user-info__followers user-info__stats-child">
               <p class="user-info__followers__text">Followers</p>
-              <p class="user-info__followers__number">-</p>
+              <p class="user-info__followers__number">2000</p>
             </div>
-            <div class="user-info__following">
+            <div class="user-info__following user-info__stats-child">
               <p class="user-info__following__text">Following</p>
-              <p class="user-info__following__number">-</p>
+              <p class="user-info__following__number">8</p>
             </div>
           </div>
 
-<!-- ------------------------------------------------- -->
-<!--                     User info contact                -->
-<!-- ------------------------------------------------- -->
+          <!-- ------------------------------------------------- -->
+          <!--                     User info contact             -->
+          <!-- ------------------------------------------------- -->
           <div class="user-info__contact">
-            <div class="user-info__address">
-              <img class="user-info__adress__img" src="" alt="address icon">
-              <p class="user-info__adress__text">-</p>
+            <div class="user-info__wrapper">
+              <div class="user-info__address user-info__contact-child">
+                <img
+                  class="user-info__adress__img"
+                  src="img/icon-location.svg"
+                  alt="address icon"
+                  width="14px"
+                  height="20px"
+                />
+                <p class="user-info__adress__text">allalsalaalalal</p>
+              </div>
+              <div class="user-info__site user-info__contact-child">
+                <img
+                  class="user-info__site__img"
+                  src="img/icon-website.svg"
+                  alt="address icon"
+                  width="20px"
+                  height="20px"
+                />
+                <p class="user-info__site__text">allalalaalalsdfsdal</p>
+              </div>
             </div>
-            <div class="user-info__site">
-              <img class="user-info__site__img" src="" alt="address icon">
-              <p class="user-info__site__text">-</p>
-            </div>
-            <div class="user-info__twitter">
-              <img class="user-info__twitter__img" src="" alt="address icon">
-              <p class="user-info__twitter__text">-</p>
-            </div>
-            <div class="user-info__workplace">
-              <img class="user-info__workplace__img" src="" alt="address icon">
-              <p class="user-info__workplace__text">-</p>
+            <div class="user-info__wrapper">
+              <div class="user-info__twitter user-info__contact-child">
+                <img
+                  class="user-info__twitter__img"
+                  src="img/icon-twitter.svg"
+                  alt="address icon"
+                  width="20px"
+                  height="20px"
+                />
+                <p class="user-info__twitter__text">sdfssdf</p>
+              </div>
+              <div class="user-info__company user-info__contact-child">
+                <img
+                  class="user-info__company__img"
+                  src="img/icon-company.svg"
+                  alt="address icon"
+                  width="20px"
+                  height="20px"
+                />
+                <p class="user-info__company__text">alalaalalal</p>
+              </div>
             </div>
           </div>
         </div>
-
       </div>
     </main>
   </body>
