@@ -1,0 +1,73 @@
+//------------------------------------------------------------------------------
+// Media for tablets
+//------------------------------------------------------------------------------
+@media screen and (min-width: $px-tablet-width) {
+  body {
+    padding-bottom: 150px;
+    padding-top: 60px;
+  }
+
+  .user-info {
+    padding: 30px 36px 10px 36px;
+  }
+
+  .user-info__profile-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .user-info__name-container {
+    margin-left: 40px;
+  }
+
+  .user-info__contact {
+    flex-direction: row;
+  }
+
+  .user-info__wrapper:nth-child(2) {
+    margin-left: 30px;
+  }
+
+  .search-bar__btn {
+    padding: 1rem 1.6rem;
+  }
+}
+
+//------------------------------------------------------------------------------
+// Media for desktop
+//------------------------------------------------------------------------------
+@media screen and (min-width: $px-desktop-width) {
+  body {
+    font-size: $size-font-desktop;
+  }
+
+  main {
+    max-width: 900px;
+  }
+
+  .user-info {
+    padding: 45px 45px 25px 45px;
+  }
+
+  .user-info__profile-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .user-info__date-joined {
+    line-height: 2;
+    position: absolute;
+    top: 67px; // aligned with name
+    right: 45px; // aligned with container padding
+  }
+
+  // margin = profile img width + user-info__name-container margin left
+  .user-info__body {
+    margin-left: 160px;
+  }
+
+  .user-info__bio,
+  .user-info__stats {
+    margin-bottom: 40px;
+  }
+}

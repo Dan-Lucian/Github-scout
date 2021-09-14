@@ -368,6 +368,7 @@ body {
 
 main {
   width: 90vw;
+  max-width: 600px;
 }
 
 /**
@@ -385,7 +386,9 @@ a:hover, a:active, a:focus {
 /**
  * Don't know why but it helps 
  */
-p, h1, h2 {
+p,
+h1,
+h2 {
   padding: 0;
   margin: 0;
 }
@@ -398,11 +401,6 @@ body {
   font-family: "Space Mono", monospace;
   font-size: 15px;
   color: var(--color-text);
-}
-@media screen and (min-width: 420px) {
-  body {
-    font-size: 18px;
-  }
 }
 
 h1, h2 {
@@ -472,7 +470,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 90vw;
   height: 100px;
 }
 
@@ -501,7 +498,7 @@ button {
 }
 
 .search-bar__btn {
-  padding: 1rem 1.2rem;
+  padding: 1rem 1.3rem;
   border-radius: 12px;
   background-color: #0079fe;
   color: var(--color-text-accent);
@@ -574,6 +571,7 @@ button {
 }
 
 .user-info {
+  position: relative;
   margin-top: 1.2rem;
   padding: 35px 26px;
   border-radius: 12px;
@@ -590,7 +588,7 @@ button {
 .user-info__head {
   display: flex;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .user-info__name-container {
@@ -617,7 +615,7 @@ button {
 
 .user-info__stats {
   margin-bottom: 30px;
-  padding: 25px 10px;
+  padding: 15px 5px;
   border-radius: 12px;
   display: flex;
   background-color: var(--color-body-bg);
@@ -642,20 +640,9 @@ button {
   align-items: center;
   flex-direction: column;
 }
-@media screen and (min-width: 600px) {
-  .user-info__contact {
-    flex-direction: row;
-  }
-}
 
 .user-info__wrapper {
   width: 100%;
-}
-
-@media screen and (min-width: 600px) {
-  .user-info__wrapper:nth-child(2) {
-    margin-left: 30px;
-  }
 }
 
 .user-info__contact-child {
@@ -684,6 +671,72 @@ button {
   --color-app-bg: #1f2a48;
   --color-text: #d2d9e5;
   --color-text-accent: #fcfcfe;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    padding-bottom: 150px;
+    padding-top: 60px;
+  }
+
+  .user-info {
+    padding: 30px 36px 10px 36px;
+  }
+
+  .user-info__profile-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .user-info__name-container {
+    margin-left: 40px;
+  }
+
+  .user-info__contact {
+    flex-direction: row;
+  }
+
+  .user-info__wrapper:nth-child(2) {
+    margin-left: 30px;
+  }
+
+  .search-bar__btn {
+    padding: 1rem 1.6rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  body {
+    font-size: 18px;
+  }
+
+  main {
+    max-width: 900px;
+  }
+
+  .user-info {
+    padding: 45px 45px 25px 45px;
+  }
+
+  .user-info__profile-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .user-info__date-joined {
+    line-height: 2;
+    position: absolute;
+    top: 67px;
+    right: 45px;
+  }
+
+  .user-info__body {
+    margin-left: 160px;
+  }
+
+  .user-info__bio,
+.user-info__stats {
+    margin-bottom: 40px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

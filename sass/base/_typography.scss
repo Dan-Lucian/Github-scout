@@ -6,10 +6,6 @@ body {
   font-family: 'Space Mono', monospace;
   font-size: $size-font-mobile;
   color: var(--color-text);
-
-  @media screen and (min-width: 420px) {
-    font-size: $size-font-desktop;
-  }
 }
 
 h1, h2{
