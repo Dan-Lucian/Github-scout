@@ -393,6 +393,11 @@ h2 {
   margin: 0;
 }
 
+html.transition, html.transition *, html.transition *:before, html.transition *:after {
+  transition: all 200ms !important;
+  transition-delay: 0s !important;
+}
+
 /**
  * The CSS properties that allow you to define:
  * the color, size, spacing, and shape of text.
@@ -485,7 +490,7 @@ button {
   display: flex;
   align-items: center;
   background-color: inherit;
-  color: var(--color-text-accent);
+  color: var(--color-app-bg-reversed);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -501,7 +506,7 @@ button {
   padding: 1rem 1.3rem;
   border-radius: 12px;
   background-color: #0079fe;
-  color: var(--color-text-accent);
+  color: #fcfcfe;
   font-weight: 700;
 }
 
@@ -664,6 +669,7 @@ button {
   --color-app-bg: #fefefe;
   --color-text: #9298a5;
   --color-text-accent: #41444b;
+  --color-app-bg-reversed: #1f2a48;
 }
 
 .dark {
@@ -671,6 +677,7 @@ button {
   --color-app-bg: #1f2a48;
   --color-text: #d2d9e5;
   --color-text-accent: #fcfcfe;
+  --color-app-bg-reversed: #fefefe;
 }
 
 @media screen and (min-width: 600px) {

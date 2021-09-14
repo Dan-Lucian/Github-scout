@@ -15,7 +15,7 @@ button {
   display: flex;
   align-items: center;
   background-color: inherit;
-  color: var(--color-text-accent);
+  color: var(--color-app-bg-reversed);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -32,6 +32,6 @@ button {
   padding: 1rem 1.3rem;
   border-radius: $px-border-radius;
   background-color: $color-button-bg;
-  color: var(--color-text-accent);
+  color: $color-text-accent-dark;
   font-weight: 700;
 }

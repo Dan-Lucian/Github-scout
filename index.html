@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="dark" lang="en">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -13,6 +13,9 @@
 
     <title>Github Scout</title>
 
+    <!-- theme sript -->
+    <script src="js/preload-theme.js"></script>
+
     <!-- Fav icon -->
     <link rel="icon" type="image/ico" href="img/favicon.ico" />
 
@@ -20,7 +23,7 @@
     <link rel="stylesheet" href="css/main.css" />
 
     <!-- My Script -->
-    <script defer src="js/script.js"></script>
+    <script type="module" src="js/main.js"></script>
   </head>
 
   <body>
@@ -30,10 +33,11 @@
       <!-- ------------------------------------------------- -->
       <header>
         <h1 class="main-title">Github Scout</h1>
-        <button class="btn-theme">
-          <p class="btn-theme__text">Light</p>
+        <button class="btn-theme" id="btn-theme">
+          <p class="btn-theme__text" id="theme-text">Light</p>
           <img
             class="btn-theme__img"
+            id="img-theme"
             src="img/icon-sun.svg"
             alt="theme button icon"
             width="20px"
@@ -90,7 +94,8 @@
         <!-- ------------------------------------------------- -->
         <div class="user-info__body">
           <p class="user-info__bio">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. ipsum dolor sit amet consectetur adipi.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. ipsum
+            dolor sit amet consectetur adipi.
           </p>
 
           <div class="user-info__stats">
