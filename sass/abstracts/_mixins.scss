@@ -32,10 +32,15 @@
   }
 }
 
-@mixin flexCenter($direction){
+@mixin flexCenter($direction) {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: $direction;
 }
 
+@mixin boxShadow() {
+  box-shadow: 0px 20px 20px 14px var(--color-app-shadow);
+  -webkit-box-shadow: 0px 20px 20px 14px var(--color-app-shadow);
+  -moz-box-shadow: 0px 20px 20px 14px var(--color-app-shadow);
+}

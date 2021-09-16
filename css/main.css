@@ -533,9 +533,9 @@ button {
   align-items: center;
   border-radius: 12px;
   background-color: var(--color-app-bg);
-  box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 20px 20px 14px var(--color-app-shadow);
+  -webkit-box-shadow: 0px 20px 20px 14px var(--color-app-shadow);
+  -moz-box-shadow: 0px 20px 20px 14px var(--color-app-shadow);
 }
 
 .search-bar__img {
@@ -584,9 +584,9 @@ button {
   padding: 35px 26px;
   border-radius: 12px;
   background-color: var(--color-app-bg);
-  box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 20px 20px 14px var(--color-app-shadow);
+  -webkit-box-shadow: 0px 20px 20px 14px var(--color-app-shadow);
+  -moz-box-shadow: 0px 20px 20px 14px var(--color-app-shadow);
 }
 
 .user-info__profile-img {
@@ -643,6 +643,7 @@ button {
   margin-top: 10px;
   font-weight: 700;
   font-size: 1.5em;
+  color: var(--color-text-accent);
 }
 
 .user-info__contact {
@@ -670,12 +671,13 @@ button {
   margin-left: 6px;
 }
 
-.light {
+html {
   --color-body-bg: #f5f8ff;
   --color-app-bg: #fefefe;
-  --color-text: #9298a5;
+  --color-text: #6a7180;
   --color-text-accent: #41444b;
   --color-app-bg-reversed: #1f2a48;
+  --color-app-shadow: rgba(70, 98, 165, 0.15);
 }
 
 .dark {
@@ -684,6 +686,7 @@ button {
   --color-text: #d2d9e5;
   --color-text-accent: #fcfcfe;
   --color-app-bg-reversed: #fefefe;
+  --color-app-shadow: rgba(0, 0, 0, 0.15);
 }
 
 @media screen and (min-width: 600px) {
@@ -731,8 +734,8 @@ button {
   }
 
   .user-info__profile-img {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
   }
 
   .user-info__date-joined {
