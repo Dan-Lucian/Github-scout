@@ -85,9 +85,9 @@
         <!-- ------------------------------------------------- -->
         <div class="user-info__head">
           <img
-            id="profile-img"
             class="user-info__profile-img"
-            src="img/favicon.ico"
+            data-user="avatar_url"
+            src="img/octocat-profile-img.png"
             alt="user profile image"
             width="50px"
             height="50px"
@@ -95,9 +95,9 @@
           <div class="user-info__name-container">
             <h2 class="user-info__name" data-user="name">The Octocat</h2>
             <a class="user-info__profile-link" data-user="login" href=""
-              >@octocat</a
+              >octocat</a
             >
-            <p id="date-joined" class="user-info__date-joined">
+            <p class="user-info__date-joined" data-user="created_at">
               Joined 25 Jan 2011
             </p>
           </div>
@@ -106,23 +106,24 @@
         <!--                     User info body                -->
         <!-- ------------------------------------------------- -->
         <div class="user-info__body">
-          <p id="bio" class="user-info__bio">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. ipsum
-            dolor sit amet consectetur adipi.
-          </p>
+          <p class="user-info__bio" data-user="bio">not provided</p>
 
           <div class="user-info__stats">
             <div class="user-info__repos user-info__stats-child">
               <p class="user-info__repos__text">Repos</p>
-              <p class="user-info__repos__number">138</p>
+              <p class="user-info__repos__number" data-user="public_repos">8</p>
             </div>
             <div class="user-info__followers user-info__stats-child">
               <p class="user-info__followers__text">Followers</p>
-              <p class="user-info__followers__number">2000</p>
+              <p class="user-info__followers__number" data-user="followers">
+                4005
+              </p>
             </div>
             <div class="user-info__following user-info__stats-child">
               <p class="user-info__following__text">Following</p>
-              <p class="user-info__following__number">8</p>
+              <p class="user-info__following__number" data-user="following">
+                9
+              </p>
             </div>
           </div>
 
@@ -139,7 +140,9 @@
                   width="14px"
                   height="20px"
                 />
-                <p class="user-info__adress__text">allalsalaalalal</p>
+                <p class="user-info__adress__text" data-user="location">
+                  San Francisco
+                </p>
               </div>
               <div class="user-info__site user-info__contact-child">
                 <img
@@ -149,7 +152,9 @@
                   width="20px"
                   height="20px"
                 />
-                <p class="user-info__site__text">allalalaalalsdfsdal</p>
+                <p class="user-info__site__text" data-user="blog">
+                  https://github.blog
+                </p>
               </div>
             </div>
             <div class="user-info__wrapper">
@@ -161,7 +166,12 @@
                   width="20px"
                   height="20px"
                 />
-                <p class="user-info__twitter__text">sdfssdf</p>
+                <p
+                  class="user-info__twitter__text"
+                  data-user="twitter_username"
+                >
+                  not provided
+                </p>
               </div>
               <div class="user-info__company user-info__contact-child">
                 <img
@@ -171,7 +181,9 @@
                   width="20px"
                   height="20px"
                 />
-                <p class="user-info__company__text">alalaalalal</p>
+                <p class="user-info__company__text" data-user="company">
+                  @github
+                </p>
               </div>
             </div>
           </div>
