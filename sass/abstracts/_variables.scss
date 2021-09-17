@@ -80,30 +80,3 @@ $breakpoints: (
 /// @example scss - When using a CDN
 ///   $base-url: 'http://cdn.example.com/assets/';
 $base-url: '/assets/' !default;
-
-// Colors
-$color-green: #55c57a;
-$color-green-light: #7ed56f;
-$color-green-dark: #28b485;
-
-$color-orange-light: #ffb900;
-$color-orange-dark: #ff7730;
-
-$color-blue-light: #2998ff;
-$color-blue-dark: #5643fa;
-
-$color-mat-black: #141414;
-
-$color-grey-light-1: #f9f7f6;
-$color-grey-light-2: #f7f7f7;
-$color-grey-light-3: #eee;
-$color-grey-light-4: #aaa;
-
-$color-grey-dark-1: #777;
-$color-grey-dark-2: #999;
-$color-grey-dark-3: #333;
-$color-grey-dark-4: #54483a;
-$color-grey-dark-5: #6d5d4b;
-
-$color-white: #fff;
-$color-black: #000;

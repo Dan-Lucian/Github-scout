@@ -504,6 +504,7 @@ button {
 
 .search-bar__btn {
   padding: 1rem 1.3rem;
+  border: none;
   border-radius: 12px;
   background-color: #0079fe;
   color: #fcfcfe;

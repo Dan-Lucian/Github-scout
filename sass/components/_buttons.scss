@@ -27,9 +27,12 @@ button {
   height: 20px;
 }
 
+// -----------------------------------------------------------------------------
 // Search button
+// -----------------------------------------------------------------------------
 .search-bar__btn {
   padding: 1rem 1.3rem;
+  border: none;
   border-radius: $px-border-radius;
   background-color: $color-button-bg;
   color: $color-text-accent-dark;

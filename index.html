@@ -49,7 +49,7 @@
       <!-- ------------------------------------------------- -->
       <!--                     Search bar                    -->
       <!-- ------------------------------------------------- -->
-      <div class="search-bar">
+      <form class="search-bar" action="" id="form">
         <img
           class="search-bar__img"
           src="img/icon-search.svg"
@@ -60,13 +60,21 @@
         <div class="search-bar__input-container">
           <input
             class="search-bar__input"
+            name="text-input"
             type="text"
             placeholder="Search Github username"
+            id="search-input"
           />
           <span class="focus-border"></span>
         </div>
-        <button class="search-bar__btn">Search</button>
-      </div>
+        <input
+          type="submit"
+          name="btn-search"
+          value="Search"
+          class="search-bar__btn"
+        />
+        <!-- <button class="search-bar__btn" id="btn-search">Search</button> -->
+      </form>
 
       <!-- ------------------------------------------------- -->
       <!--                     User info container           -->
@@ -77,6 +85,7 @@
         <!-- ------------------------------------------------- -->
         <div class="user-info__head">
           <img
+            id="profile-img"
             class="user-info__profile-img"
             src="img/favicon.ico"
             alt="user profile image"
@@ -84,16 +93,20 @@
             height="50px"
           />
           <div class="user-info__name-container">
-            <h2 class="user-info__name">The Octocat</h2>
-            <a class="user-info__profile-link" href="">@octocat</a>
-            <p class="user-info__date-joined">Joined 25 Jan 2011</p>
+            <h2 class="user-info__name" data-user="name">The Octocat</h2>
+            <a class="user-info__profile-link" data-user="login" href=""
+              >@octocat</a
+            >
+            <p id="date-joined" class="user-info__date-joined">
+              Joined 25 Jan 2011
+            </p>
           </div>
         </div>
         <!-- ------------------------------------------------- -->
         <!--                     User info body                -->
         <!-- ------------------------------------------------- -->
         <div class="user-info__body">
-          <p class="user-info__bio">
+          <p id="bio" class="user-info__bio">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. ipsum
             dolor sit amet consectetur adipi.
           </p>
