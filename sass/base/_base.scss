@@ -37,13 +37,16 @@ main {
  * Basic styles for links
  */
 a {
-  color: $brand-color;
+  color: var(--color-text);
   text-decoration: none;
+  cursor: pointer;
 
   @include on-event {
-    color: $text-color;
+    color: var(--color-text);
     text-decoration: underline;
   }
+
+
 }
 
 /**

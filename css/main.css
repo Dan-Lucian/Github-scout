@@ -375,11 +375,12 @@ main {
  * Basic styles for links
  */
 a {
-  color: #e50050;
+  color: var(--color-text);
   text-decoration: none;
+  cursor: pointer;
 }
 a:hover, a:active, a:focus {
-  color: #222222;
+  color: var(--color-text);
   text-decoration: underline;
 }
 
@@ -509,6 +510,7 @@ button {
   background-color: #0079fe;
   color: #fcfcfe;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .box {
