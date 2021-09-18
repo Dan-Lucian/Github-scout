@@ -7,6 +7,8 @@ async function updateUser() {
 
   const input = document.getElementById('search-input');
   const inputValue = input.value;
+  if (!inputValue) return;
+
   input.value = '';
 
   try {
@@ -38,5 +40,36 @@ function setUserData(userData) {
     if (element.dataset.user === 'login') element.href = userData['html_url'];
     if (element.dataset.user === 'avatar_url')
       element.src = userData['avatar_url'];
+    if (element.dataset.user === 'created_at') {
+      const date = new Date(userData['created_at']);
+      element.innerHTML =
+        'Joined ' +
+        date.getUTCDate() +
+        ' ' +
+        getMonthName(date.getUTCMonth()) +
+        ' ' +
+        date.getUTCFullYear();
+    }
   });
+
+  function getMonthName(monthNumber) {
+    const monthNames = [
+      'Jan',
+      'Feb',
+      'Mar',
+      'Apr',
+      'May',
+      'Jun',
+      'Jul',
+      'Aug',
+      'Sep',
+      'Oct',
+      'Nov',
+      'Dec',
+    ];
+
+    return monthNames[monthNumber];
+  }
+
+  //2010-07-30T14:31:35Z
 }
