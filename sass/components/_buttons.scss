@@ -38,4 +38,8 @@ button {
   color: $color-text-accent-dark;
   font-weight: 700;
   cursor: pointer;
+
+  &:hover {
+    background-color: darken($color-button-bg, 15%);
+  }
 }
