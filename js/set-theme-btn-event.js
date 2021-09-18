@@ -44,11 +44,13 @@ function changeTheme() {
 
     function changeImgTheme() {
       if (isCookieThemeLight) {
-        document.getElementById('img-theme').src = 'img/icon-sun.svg';
+        document.getElementById('img-theme').src =
+          '/Github-scout/img/icon-sun.svg';
         return;
       }
 
-      document.getElementById('img-theme').src = 'img/icon-moon.svg';
+      document.getElementById('img-theme').src =
+        '/Github-scout/img/icon-moon.svg';
     }
 
     function changeTextTheme() {
