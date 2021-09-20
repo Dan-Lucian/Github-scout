@@ -596,10 +596,14 @@ button {
 }
 
 .user-info__profile-img {
+  background-origin: border-box;
   width: 80px;
   height: 80px;
   border-radius: 50%;
   background: white;
+  box-shadow: 0px 0px 20px 18px var(--color-app-shadow);
+  -webkit-box-shadow: 0px 0px 20px 18px var(--color-app-shadow);
+  -moz-box-shadow: 0px 0px 20px 18px var(--color-app-shadow);
 }
 
 .user-info__head {
@@ -677,9 +681,29 @@ button {
   margin-left: 6px;
 }
 
+.not-found {
+  position: fixed;
+  z-index: 1000;
+  top: 10px;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  background: var(--color-message-bg);
+  color: var(--color-text-accent);
+  font-size: 1.2rem;
+  font-weight: 700;
+  opacity: 0;
+  transition: opacity 400ms ease-in-out;
+}
+
+.not-found--fade-in {
+  opacity: 1;
+}
+
 html {
   --color-body-bg: #f5f8ff;
   --color-app-bg: #fefefe;
+  --color-message-bg: rgba(72, 112, 207, 0.5);
   --color-text: #6a7180;
   --color-text-accent: #41444b;
   --color-app-bg-reversed: #1f2a48;
@@ -689,6 +713,7 @@ html {
 .dark {
   --color-body-bg: #141c2f;
   --color-app-bg: #1f2a48;
+  --color-message-bg: rgba(0, 0, 0, 0.5);
   --color-text: #d2d9e5;
   --color-text-accent: #fcfcfe;
   --color-app-bg-reversed: #fefefe;

@@ -15,10 +15,15 @@
 }
 
 .user-info__profile-img {
+  background-origin: border-box;
   width: 80px;
   height: 80px;
   border-radius: 50%;
   background: white;
+
+  box-shadow: 0px 0px 20px 18px var(--color-app-shadow);
+  -webkit-box-shadow: 0px 0px 20px 18px var(--color-app-shadow);
+  -moz-box-shadow: 0px 0px 20px 18px var(--color-app-shadow);
 }
 
 .user-info__head {

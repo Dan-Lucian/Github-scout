@@ -1,0 +1,18 @@
+.not-found {
+  position: fixed;
+  z-index: 1000;
+  top: 10px;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  background: var(--color-message-bg);
+  color: var(--color-text-accent);
+  font-size: 1.2rem;
+  font-weight: 700;
+  opacity: 0;
+  transition: opacity 400ms ease-in-out;
+}
+
+.not-found--fade-in {
+  opacity: 1;
+}
